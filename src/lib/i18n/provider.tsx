@@ -10,5 +10,6 @@ export default function I18nProvider(props: {
   locale: string
 }) {
   initI18next(props.locale)
+
   return <I18nextProvider i18n={i18n}>{props.children}</I18nextProvider>
 }
