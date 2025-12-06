@@ -1,8 +1,7 @@
 import { type NextRequest, NextResponse } from 'next/server'
-import { LocaleList } from '@/lib/i18n/constants'
-import { getLocale } from '@/lib/utils'
+import { LOCAL_COOKIE_KEY, LocaleEnum, LocaleList } from '@/lib/i18n/constants'
 
-export async function proxy(request: NextRequest) {
+export function proxy(request: NextRequest) {
   // Check if there is any supported locale in the pathname
   const { pathname } = request.nextUrl
   const pathnameHasLocale = LocaleList.some(
@@ -12,7 +11,7 @@ export async function proxy(request: NextRequest) {
   if (pathnameHasLocale) return
 
   // Redirect if there is no locale
-  const locale = await getLocale()
+  const locale = request.headers.get(LOCAL_COOKIE_KEY) || LocaleEnum.EN
   request.nextUrl.pathname = `/${locale}${pathname}`
   return NextResponse.rewrite(request.nextUrl)
 }

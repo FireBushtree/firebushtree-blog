@@ -1,5 +1,8 @@
 # Repository Guidelines
 
+## Development Rules
+- Please review the development standards in docs/rules before beginning any development work.
+
 ## Project Structure & Module Organization
 - `src/app/[locale]/` holds App Router entries; `layout.tsx` wires `I18nProvider`, `page.tsx` renders the localized shell. Keep locale-specific UI here, and add routes as new folders under this segment.
 - `src/components/` contains shared React components (e.g., `Test.tsx` shows server translation usage).

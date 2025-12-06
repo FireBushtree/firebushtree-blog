@@ -1,16 +1,21 @@
+import NavBar from '@/components/business/nav-bar'
+import type { LocaleEnum } from '@/lib/i18n/constants'
 import I18nProvider from '@/lib/i18n/provider'
 import '../globals.css'
 
 export default async function RootLayout(props: {
-  params: Promise<{ locale: string }>
+  params: { locale: LocaleEnum }
   children: React.ReactNode
 }) {
   const { locale } = await props.params
 
   return (
-    <html lang="en">
+    <html lang={locale}>
       <body>
-        <I18nProvider locale={locale}>{props.children}</I18nProvider>
+        <I18nProvider locale={locale}>
+          <NavBar locale={locale} />
+          {props.children}
+        </I18nProvider>
       </body>
     </html>
   )
