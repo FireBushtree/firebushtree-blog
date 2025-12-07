@@ -1,6 +1,6 @@
 import NavBar from '@/components/business/nav-bar'
 import type { LocaleEnum } from '@/lib/i18n/constants'
-import I18nProvider from '@/lib/i18n/provider'
+import I18nProvider from '@/providers/i18nProvider'
 import '../globals.css'
 
 export default async function RootLayout(props: {
