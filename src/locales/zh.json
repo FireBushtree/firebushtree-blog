@@ -1,3 +1,15 @@
 {
-  "welcome": "欢迎"
+  "welcome": "欢迎",
+  "home.badge": "个人博客",
+  "home.title": "关于构建、思考和 Web 的一些记录。",
+  "home.subtitle": "一个安静的地方，用来收集关于工程实践与写作的小想法、小实验和小发现。",
+  "home.bannerAlt": "抽象窗口插画",
+  "home.latest": "最近更新",
+  "home.updatedAtLabel": "最近修改",
+  "home.post1.title": "为什么我还在写「简单的博客」",
+  "home.post1.description": "聊聊极简界面、阅读体验，以及为什么一个安静的布局依然重要。",
+  "home.post2.title": "改变工作方式的一些小工具",
+  "home.post2.description": "带你快速看几段小脚本和小工作流，让日常开发轻盈一点。",
+  "home.post3.title": "边缘的碎片",
+  "home.post3.description": "未完成的想法、零散的笔记，也许以后会长成真正的文章。"
 }

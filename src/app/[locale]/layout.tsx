@@ -1,4 +1,3 @@
-import NavBar from '@/components/business/nav-bar'
 import type { LocaleEnum } from '@/lib/i18n/constants'
 import I18nProvider from '@/providers/i18n-provider'
 import '../globals.css'
@@ -18,10 +17,7 @@ export default async function RootLayout(props: {
           enableSystem
           disableTransitionOnChange
         >
-          <I18nProvider locale={locale}>
-            <NavBar locale={locale} />
-            {props.children}
-          </I18nProvider>
+          <I18nProvider locale={locale}>{props.children}</I18nProvider>
         </ThemeProvider>
       </body>
     </html>

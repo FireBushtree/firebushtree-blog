@@ -1,3 +1,15 @@
 {
-  "welcome": "welcome"
+  "welcome": "welcome",
+  "home.badge": "PERSONAL BLOG",
+  "home.title": "Notes on building, thinking, and the web.",
+  "home.subtitle": "A quiet place to collect ideas, experiments, and small discoveries around engineering and writing.",
+  "home.bannerAlt": "Abstract window illustration",
+  "home.latest": "LATEST POSTS",
+  "home.updatedAtLabel": "Updated",
+  "home.post1.title": "Why I still like simple blogs",
+  "home.post1.description": "Some quick thoughts on minimal interfaces, reading comfort, and why a quiet layout still matters.",
+  "home.post2.title": "Little tools that change how I work",
+  "home.post2.description": "A short tour of tiny scripts and workflows that make everyday development feel lighter.",
+  "home.post3.title": "Fragments from the margins",
+  "home.post3.description": "Unfinished notes, stray ideas, and things that might become real posts later."
 }

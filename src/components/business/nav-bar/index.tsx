@@ -14,7 +14,7 @@ export default function NavBar({ locale }: NavBarProps) {
   const isZhLocale = locale === LocaleEnum.ZH
 
   return (
-    <header className="sticky top-0 z-10 bg-background backdrop-blur shadow-sm">
+    <header className="fixed inset-x-0 top-0 z-10 bg-background/80 backdrop-blur shadow-sm">
       <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
         <Link
           href={`/${isZhLocale ? LocaleEnum.ZH : ''}`}
