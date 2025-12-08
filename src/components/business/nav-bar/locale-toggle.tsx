@@ -29,7 +29,7 @@ export default function LocaleToggle({ locale }: LocaleToggleProps) {
   return (
     <Button asChild size="icon" variant="outline" aria-label="Switch language">
       <Link href={langLink}>
-        <Languages className="size-5" />
+        <Languages />
       </Link>
     </Button>
   )
