@@ -31,7 +31,20 @@ export default async function Home(props: { params: { locale: LocaleEnum } }) {
   return (
     <div>
       <NavBar locale={locale} />
+
       <main className="pt-16 min-h-screen bg-zinc-50 text-zinc-900 dark:bg-black dark:text-zinc-50">
+        <section className="space-y-4">
+          <h1 className="typo-h56">博客标题</h1>
+          <h2 className="typo-h32">分区标题</h2>
+          <p className="typo-b16">这是正文内容，适用于文章段落与说明文字。</p>
+          <p className="typo-b14 text-muted-foreground">
+            补充说明文字，建议使用较浅颜色。
+          </p>
+          <span className="typo-c11 text-muted-foreground">
+            更新时间 · 2025-01-01
+          </span>
+        </section>
+
         <section className="mx-auto max-w-5xl px-6 pb-16 pt-10 sm:pt-16">
           <header className="mb-8 space-y-2">
             <p className="text-xs font-medium uppercase tracking-[0.3em] text-zinc-500 dark:text-zinc-500">

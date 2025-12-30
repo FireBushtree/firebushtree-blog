@@ -1,0 +1,85 @@
+@layer utilities {
+  .typo-h56 {
+    @apply text-[32px] leading-[1.2] font-bold md:text-[40px] lg:text-[56px];
+  }
+
+  .typo-h48 {
+    @apply text-[28px] leading-[1.2] font-bold md:text-[36px] lg:text-[48px];
+  }
+
+  .typo-h40 {
+    @apply text-[24px] leading-[1.2] font-bold md:text-[32px] lg:text-[40px];
+  }
+
+  .typo-h32 {
+    @apply text-[22px] leading-[1.2] font-bold md:text-[28px] lg:text-[32px];
+  }
+
+  .typo-t32 {
+    @apply text-[20px] leading-[1.4] font-semibold md:text-[24px] lg:text-[32px];
+  }
+
+  .typo-t24 {
+    @apply text-[18px] leading-[1.4] font-semibold md:text-[20px] lg:text-[24px];
+  }
+
+  .typo-t20 {
+    @apply text-[16px] leading-[1.4] font-semibold md:text-[18px] lg:text-[20px];
+  }
+
+  .typo-t18 {
+    @apply text-[16px] leading-[22px] font-semibold md:text-[18px] lg:text-[18px];
+  }
+
+  .typo-t16 {
+    @apply text-[14px] leading-[1.4] font-semibold md:text-[16px] lg:text-[16px];
+  }
+
+  .typo-t14 {
+    @apply text-[12px] leading-[1.4] font-semibold md:text-[14px] lg:text-[14px];
+  }
+
+  .typo-t12 {
+    @apply text-[12px] leading-[16px] font-semibold md:text-[12px] lg:text-[12px];
+  }
+
+  .typo-m24 {
+    @apply text-[18px] leading-[1.4] font-medium md:text-[20px] lg:text-[24px];
+  }
+
+  .typo-m20 {
+    @apply text-[16px] leading-[1.4] font-medium md:text-[18px] lg:text-[20px];
+  }
+
+  .typo-m18 {
+    @apply text-[16px] leading-[1.4] font-medium md:text-[18px] lg:text-[18px];
+  }
+
+  .typo-m16 {
+    @apply text-[14px] leading-[1.4] font-medium md:text-[16px] lg:text-[16px];
+  }
+
+  .typo-m14 {
+    @apply text-[12px] leading-[1.4] font-medium md:text-[14px] lg:text-[14px];
+  }
+
+  .typo-m12 {
+    @apply text-[12px] leading-[1.4] font-medium md:text-[12px] lg:text-[12px];
+  }
+
+  .typo-b16 {
+    @apply text-[14px] leading-[1.4] font-normal md:text-[16px] lg:text-[16px];
+  }
+
+  .typo-b14 {
+    @apply text-[12px] leading-[1.4] font-normal md:text-[14px] lg:text-[14px];
+  }
+
+  .typo-c12 {
+    @apply text-[12px] leading-[16px] font-normal md:text-[12px] lg:text-[12px];
+  }
+
+  .typo-c11 {
+    @apply text-[10px] leading-[1.4] font-normal md:text-[10px] lg:text-[10px];
+  }
+}
