@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Article Detail Page</title>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13a4ec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101c22",
+                    },
+                    fontFamily: {
+                        "display": ["Work Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        /* Custom scrollbar for horizontal tag list */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white font-display antialiased selection:bg-primary selection:text-white">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+<!-- Top Navigation -->
+<div class="sticky top-0 z-50 flex items-center bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-sm p-4 pb-2 justify-between border-b border-slate-200 dark:border-slate-800">
+<button class="flex size-10 shrink-0 items-center justify-center rounded-full hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors">
+<span class="material-symbols-outlined text-slate-900 dark:text-white" style="font-size: 24px;">arrow_back_ios_new</span>
+</button>
+<div class="flex items-center justify-end gap-2">
+<button class="flex size-10 shrink-0 items-center justify-center rounded-full hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors">
+<span class="material-symbols-outlined text-slate-900 dark:text-white" style="font-size: 24px;">bookmark_border</span>
+</button>
+<button class="flex size-10 shrink-0 items-center justify-center rounded-full hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors">
+<span class="material-symbols-outlined text-slate-900 dark:text-white" style="font-size: 24px;">ios_share</span>
+</button>
+</div>
+</div>
+<!-- Hero Image -->
+<div class="w-full px-4 pt-4 pb-2">
+<div class="w-full h-64 bg-slate-200 dark:bg-slate-800 rounded-lg overflow-hidden relative shadow-sm">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 hover:scale-105" data-alt="Abstract minimalist geometric architecture with blue sky" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBiH8aP3yPAGpmUg3l5o9FvNlINoezzyOaZgiRCVafuVjYzy3_EZmAZb-RPeF7wPrnHKEZ7SHaULa5nvILzVLdaeZebjSPZU6uRSO2QWqXzJKOF5aYeVcF22F72yV2k_-7RQHkdpqGnutrsNCy6LG-yTwNTVM0Srs3ZKliXhAM9bggp6ZAez6gCRCfsWXBrfNlW6kt7QJd9CMW_TN2roE0J7ARtfjMjCH-HvHQdHwKIdWV_hTRRv-WsH7tWs7F2IxyjBBnm5auRca4B');">
+</div>
+</div>
+</div>
+<!-- Article Header -->
+<div class="px-4 pt-4 pb-2">
+<div class="flex items-center gap-2 mb-3">
+<span class="px-2 py-1 text-xs font-bold uppercase tracking-wider text-primary bg-primary/10 rounded-full">Design</span>
+<span class="text-xs text-slate-500 dark:text-slate-400 font-medium">5 min read</span>
+</div>
+<h1 class="text-3xl md:text-4xl font-bold leading-tight tracking-tight text-slate-900 dark:text-white mb-4">
+                The Future of Minimalist Design in 2024
+            </h1>
+<!-- Author Meta -->
+<div class="flex items-center gap-3 py-2 border-b border-slate-200 dark:border-slate-800 pb-6">
+<div class="size-10 rounded-full bg-slate-200 dark:bg-slate-700 overflow-hidden bg-cover bg-center ring-2 ring-background-light dark:ring-background-dark" data-alt="Portrait of the author Jane Doe smiling" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB0VszJBSaYEsaXywCYuqSvWxYmtGL9Dk8rgWqnFmMlgLfl59yIpIpPkjZ_zc3QyPIJvKa5QgGqQ0vOJ_xjIWIQv7yOlllf7J9ah4AJrkyfp8SHresjp6XZfhbhKgGIATbb__EHF1OU2H1zSz-2vElVci80ohs-O7VWWfED8HdEAyG0gHnYo3NjHQZU3L3FEVP9U5QqF9MwKkmaJkPWNAgZMR6dsrpTFaUbniE37GLsbC8BDmO7CpN_d5BsWD5342q5kkqy0yFOCLwm');">
+</div>
+<div class="flex flex-col">
+<p class="text-sm font-semibold text-slate-900 dark:text-white">Jane Doe</p>
+<p class="text-xs text-slate-500 dark:text-slate-400">Oct 14, 2023</p>
+</div>
+<button class="ml-auto text-primary text-sm font-semibold hover:text-primary/80">Follow</button>
+</div>
+</div>
+<!-- Article Body -->
+<div class="px-4 py-2 space-y-6">
+<!-- Lead Paragraph -->
+<p class="text-lg md:text-xl font-medium leading-relaxed text-slate-800 dark:text-slate-200">
+                Minimalism isn't just a visual style; it's a philosophy that strips away the non-essential to focus on what truly matters. In 2024, we see this trend evolving beyond white space and Helvetica into something more organic and personalized.
+            </p>
+<p class="text-base leading-7 text-slate-600 dark:text-slate-300">
+                For years, digital interfaces have been dominated by stark contrasts and rigid grids. While functional, this approach often leaves users feeling cold and detached. The new wave of minimalism—often dubbed "Warm Minimalism"—introduces softer palettes, rounded corners, and subtle textures that invite interaction rather than demanding it.
+            </p>
+<!-- Blockquote -->
+<figure class="my-6 pl-4 border-l-4 border-primary">
+<blockquote class="text-xl italic font-medium text-slate-900 dark:text-white leading-relaxed">
+                    "Design is not just what it looks like and feels like. Design is how it works."
+                </blockquote>
+<figcaption class="mt-2 text-sm text-slate-500 dark:text-slate-400">— Steve Jobs</figcaption>
+</figure>
+<p class="text-base leading-7 text-slate-600 dark:text-slate-300">
+                This evolution isn't just aesthetic; it's functional. By reducing cognitive load through smarter spacing and hierarchy, designers are creating apps that feel intuitive from the first tap. It's about respecting the user's attention span in an increasingly noisy digital landscape.
+            </p>
+<!-- Embedded Image -->
+<div class="my-6">
+<div class="w-full h-56 md:h-80 bg-slate-200 dark:bg-slate-800 rounded-lg overflow-hidden mb-2">
+<div class="w-full h-full bg-cover bg-center" data-alt="Close up of a clean modern desk workspace setup" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDbmkvwv6QT8U3V2mFSX4ymWz1mBPbFzbCQ4ZUsWIvWH0PfyGvhYWbR2jBhYUq45MIRdHIONJ65T6vn8woqOXbOT63T7xywlz0N-UD3WNtzJR-gi92g8JbnYRhXp9mBf7mke9FcBLDsV5dQ99InNERZTs2Zj8uDv9bN6aXjVW-lV4yiApw-SdY8Om1610M6IKD340bB1oIuBFgaQmpO35wPSYC6AAnK4ALc1G78hD_yBAEaTAiPgRrwloII90NnJ3TrJjeWzCx83kzB');">
+</div>
+</div>
+<p class="text-xs text-center text-slate-500 dark:text-slate-400 italic">
+                    A workspace that reflects the principles of modern reductionism.
+                </p>
+</div>
+<p class="text-base leading-7 text-slate-600 dark:text-slate-300">
+                We are also seeing a resurgence of serif typography in headers, paired with clean sans-serif body text. This contrast creates a sense of editorial elegance that was previously reserved for print media. The goal is to make reading on a screen as comfortable as reading a book.
+            </p>
+<p class="text-base leading-7 text-slate-600 dark:text-slate-300">
+                Ultimately, the future of design lies in empathy. It's about creating spaces—both digital and physical—that allow us to think, breathe, and create without distraction.
+            </p>
+</div>
+<!-- Tags Scroll View -->
+<div class="px-4 pt-6 pb-8 border-b border-slate-200 dark:border-slate-800">
+<h3 class="text-sm font-bold text-slate-900 dark:text-white mb-3 uppercase tracking-wide">Related Topics</h3>
+<div class="flex gap-2 overflow-x-auto no-scrollbar pb-2">
+<span class="inline-flex items-center px-3 py-1.5 rounded-full text-sm font-medium bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 whitespace-nowrap border border-slate-200 dark:border-slate-700">#Minimalism</span>
+<span class="inline-flex items-center px-3 py-1.5 rounded-full text-sm font-medium bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 whitespace-nowrap border border-slate-200 dark:border-slate-700">#UI/UX</span>
+<span class="inline-flex items-center px-3 py-1.5 rounded-full text-sm font-medium bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 whitespace-nowrap border border-slate-200 dark:border-slate-700">#ProductDesign</span>
+<span class="inline-flex items-center px-3 py-1.5 rounded-full text-sm font-medium bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 whitespace-nowrap border border-slate-200 dark:border-slate-700">#2024Trends</span>
+</div>
+</div>
+<!-- Comments Section -->
+<div class="px-4 py-8 bg-slate-50 dark:bg-[#15222b]">
+<div class="flex items-center justify-between mb-6">
+<h2 class="text-xl font-bold text-slate-900 dark:text-white">Comments (12)</h2>
+<div class="flex items-center gap-1 text-primary text-sm font-medium cursor-pointer">
+<span>Sort by Newest</span>
+<span class="material-symbols-outlined" style="font-size: 18px;">expand_more</span>
+</div>
+</div>
+<!-- Comment Input -->
+<div class="flex gap-3 mb-8">
+<div class="size-10 shrink-0 rounded-full bg-slate-200 dark:bg-slate-700 overflow-hidden bg-cover bg-center" data-alt="Avatar of current user" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBGHyLexXRdpmVbqePRAqTaoZOC2tHNm7u8f8vDWZRpZKZLFYDFtHvibcMBnYH3EES5SSDX_MvI7l0EMXpauqBzoSHcU9TBVH949kJFfTP6pvryhZeVLefNPHAROeDibWRe-uX9wOzT2Y-yXUftv3lSPm9dY6ps-g1pUUOezbeJdSHoB-C3DykFAKKy0yXPAhb1GKStG7ocLsifmjHswij_xu6h32WHvlUWzJhe95OWsTRc86V1659rn1jzIqdTlQjgErMYyc-OYMmb');">
+</div>
+<div class="flex-1">
+<textarea class="w-full bg-white dark:bg-[#111c22] border border-slate-200 dark:border-slate-700 rounded-lg p-3 text-sm text-slate-900 dark:text-white placeholder-slate-400 focus:ring-2 focus:ring-primary focus:border-transparent outline-none resize-none" placeholder="Add to the discussion..." rows="2"></textarea>
+<div class="flex justify-end mt-2">
+<button class="bg-primary hover:bg-primary/90 text-white text-sm font-bold py-2 px-4 rounded-full transition-colors">
+                            Post Comment
+                        </button>
+</div>
+</div>
+</div>
+<!-- Comment List -->
+<div class="space-y-6">
+<!-- Comment 1 -->
+<div class="flex gap-4">
+<div class="size-10 shrink-0 rounded-full bg-slate-200 dark:bg-slate-700 overflow-hidden bg-cover bg-center" data-alt="Avatar of user Mark Thompson" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDKnPdh2WqmMfXVxqLkvxY6K5Mn3cAl2QJM9jYzntWRwz-toHB77QSWACGXUBsc95hc-K6Q-mZ50pF6pGL11J_vUreCPZxxaGvZOdCXnaQb8kVcbrpRUCXrn9ht9bh0jm9aGRp2BKWZe1GzkEeZs00ikzPHDAf5HHrDA9YLaSSby8G3QsnJ-yz5EFsHWGyYBg4IIKRnUKcHFBnmrQe6E6Hcwm_fqVmPqdmX3ST72JFSWR6XC6ltO0Q5jZRLcV6U8id1mDt0bLgIRZ5F');">
+</div>
+<div class="flex-1">
+<div class="bg-white dark:bg-[#111c22] p-3 rounded-lg rounded-tl-none border border-slate-200 dark:border-slate-800 shadow-sm">
+<div class="flex justify-between items-start mb-1">
+<span class="text-sm font-bold text-slate-900 dark:text-white">Mark Thompson</span>
+<span class="text-xs text-slate-500">2h ago</span>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+                                Great read! I think the point about "Warm Minimalism" is spot on. We need more humanity in our digital spaces.
+                            </p>
+</div>
+<div class="flex items-center gap-4 mt-1 pl-1">
+<button class="flex items-center gap-1 text-slate-500 dark:text-slate-400 hover:text-primary text-xs font-medium">
+<span class="material-symbols-outlined" style="font-size: 16px;">thumb_up</span>
+                                24
+                            </button>
+<button class="text-slate-500 dark:text-slate-400 hover:text-primary text-xs font-medium">Reply</button>
+</div>
+</div>
+</div>
+<!-- Comment 2 -->
+<div class="flex gap-4">
+<div class="size-10 shrink-0 rounded-full bg-slate-200 dark:bg-slate-700 overflow-hidden bg-cover bg-center" data-alt="Avatar of user Sarah Chen" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCoUsxhemnROLaGML8ik3vtN2IVq6N5Ue5sewbkA86tTmZOIw8SQvTqaFUSaR4VZp8-Q8RMoGqPXBUdtdsNv8AthDnGhxBhvc3yL66vlWXbVrWHW7JUZsm_C9T7H4SLXC0woUEVBsCzojwe_W2aTc4CrNZP_nncVgOYlEWguEcnkni9LrppjmTwex3q9ni6u8ubZTBsnpk-Myw4ZRRTZT1cK6ooGPyK3Qp0zv94Gdd__nwZ3tk5fFJbivnHhvx4cc0YqombLahr71Xa');">
+</div>
+<div class="flex-1">
+<div class="bg-white dark:bg-[#111c22] p-3 rounded-lg rounded-tl-none border border-slate-200 dark:border-slate-800 shadow-sm">
+<div class="flex justify-between items-start mb-1">
+<span class="text-sm font-bold text-slate-900 dark:text-white">Sarah Chen</span>
+<span class="text-xs text-slate-500">5h ago</span>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+                                I'm curious how this applies to data-heavy dashboards. Minimalism is great for blogs, but functionality shouldn't be sacrificed.
+                            </p>
+</div>
+<div class="flex items-center gap-4 mt-1 pl-1">
+<button class="flex items-center gap-1 text-slate-500 dark:text-slate-400 hover:text-primary text-xs font-medium">
+<span class="material-symbols-outlined" style="font-size: 16px;">thumb_up</span>
+                                15
+                            </button>
+<button class="text-slate-500 dark:text-slate-400 hover:text-primary text-xs font-medium">Reply</button>
+</div>
+</div>
+</div>
+</div>
+<button class="w-full mt-8 py-3 text-sm font-semibold text-primary border border-primary/30 rounded-lg hover:bg-primary/5 transition-colors">
+                Load more comments
+            </button>
+</div>
+<!-- Sticky Bottom Bar for Mobile Interactions -->
+<div class="sticky bottom-0 z-40 bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-md border-t border-slate-200 dark:border-slate-800 px-6 py-3 flex justify-between items-center md:hidden">
+<div class="flex items-center gap-1 text-slate-600 dark:text-slate-300">
+<span class="material-symbols-outlined filled text-primary" style="font-size: 24px; font-variation-settings: 'FILL' 1;">favorite</span>
+<span class="text-sm font-semibold">1.2k</span>
+</div>
+<div class="flex items-center gap-6">
+<div class="flex items-center gap-1 text-slate-600 dark:text-slate-300">
+<span class="material-symbols-outlined" style="font-size: 24px;">chat_bubble</span>
+<span class="text-sm font-semibold">12</span>
+</div>
+<button class="bg-primary/10 p-2 rounded-full text-primary">
+<span class="material-symbols-outlined" style="font-size: 24px;">share</span>
+</button>
+</div>
+</div>
+<div class="h-6 bg-background-light dark:bg-background-dark"></div>
+</div>
+</body></html>

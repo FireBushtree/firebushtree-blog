@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Blog Post List</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#d946ef",
+              "background-light": "#fff0f5",
+              "background-dark": "#0f172a",
+              "card-dark": "#1e293b",
+              "card-light": "#ffffff",
+              "text-secondary-dark": "#cbd5e1",
+              "text-secondary-light": "#64748b",
+            },
+            fontFamily: {
+              "display": ["Work Sans", "sans-serif"]
+            },
+            borderRadius: {
+              "DEFAULT": "0.25rem",
+              "lg": "0.5rem",
+              "xl": "0.75rem",
+              "2xl": "1rem",
+              "full": "9999px"
+            },
+          },
+        },
+      }
+    </script>
+<style>.scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }.scrollbar-hide {
+            -ms-overflow-style: none;scrollbar-width: none;}
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-slate-50 dark:bg-slate-950 font-display text-slate-900 dark:text-white transition-colors duration-200">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<header class="sticky top-0 z-40 w-full bg-white/80 dark:bg-slate-950/80 backdrop-blur-md border-b border-pink-100 dark:border-slate-800">
+<div class="flex items-center justify-between px-5 py-4">
+<h1 class="text-2xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-pink-600 to-purple-600 dark:from-pink-400 dark:to-purple-400">My Journal</h1>
+<div class="flex items-center gap-3">
+<button class="flex h-10 w-10 items-center justify-center rounded-full text-slate-600 dark:text-slate-300 hover:bg-pink-100 dark:hover:bg-slate-800 transition-colors">
+<span class="material-symbols-outlined">search</span>
+</button>
+<button class="flex h-10 w-10 items-center justify-center rounded-full text-slate-600 dark:text-slate-300 hover:bg-pink-100 dark:hover:bg-slate-800 transition-colors">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex flex-col gap-6 p-4 md:p-6 lg:max-w-4xl lg:mx-auto lg:w-full">
+<article class="group relative overflow-hidden rounded-2xl bg-card-light dark:bg-card-dark shadow-sm dark:shadow-none border border-pink-100 dark:border-slate-800 transition-all hover:shadow-md hover:shadow-pink-100 dark:hover:shadow-none">
+<div class="w-full h-56 bg-cover bg-center" data-alt="Abstract colorful AI generative art waves" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD8rJ6z69wOf_zvtNn23loECyuYIPT_sZpqxiAiNsOtlMWqQqexSA237gyHnsh-dVNaxTNKiCiLoh71Q4c3EEekya_dB8yJ201esmY9lZv7Mk_OCE6dpUh-ESI-5CBSqcivbfBeLubMJThXTdgDtarXiC14ko6WSgfnPrdhn96IT7hYIYjTJStx4V0st8icmVDSpthjzDCuTpa3t76ZRB_1kFVMGQZ8vCryvrcGoEZsEsvA70gdrPZR7_z63KbmnfoZ0KtSny8JXKtA');">
+<div class="absolute top-4 left-4">
+<span class="inline-flex items-center rounded-md bg-white/90 dark:bg-black/60 px-2.5 py-1 text-xs font-bold text-slate-900 dark:text-white backdrop-blur-sm">
+                            Featured
+                        </span>
+</div>
+</div>
+<div class="p-5">
+<div class="mb-3 flex items-center gap-2 text-xs font-medium text-primary">
+<span>AI &amp; DESIGN</span>
+<span class="text-slate-300 dark:text-slate-600">•</span>
+<span class="text-text-secondary-light dark:text-text-secondary-dark">5 min read</span>
+</div>
+<h2 class="mb-2 text-xl font-bold leading-tight text-slate-900 dark:text-white group-hover:text-primary transition-colors">
+                        The Future of AI Design
+                    </h2>
+<p class="mb-4 text-sm leading-relaxed text-text-secondary-light dark:text-text-secondary-dark line-clamp-2">
+                        Exploring how generative AI is reshaping the creative landscape and what it means for designers moving forward into the next decade of innovation.
+                    </p>
+<div class="flex items-center justify-between border-t border-slate-100 dark:border-slate-800 pt-4">
+<div class="flex items-center gap-2">
+<div class="h-8 w-8 overflow-hidden rounded-full bg-slate-200 dark:bg-slate-700" data-alt="Portrait of woman smiling" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuATajAlJmeg3WzLQyMIojFTJdGjrcerWnsVToA7yq0QLplpZZbftg2-G8nnEcqYtR6hWjNwy9E5zvPze4h70HMPJ2oLdsASQECR60yydPJMBUFK88mj7xmgiboaNrwLxjPoGqHH64tXQNNEkuEvSzX78k8tSb-8BDZCbed98SOQm_ti9GReQ8OZnWvbCuO03ZmFgTLM63-pHeMx7HrQ7cdUcPDSd7QQLDUPKw6DOfa58cuzpMBwNxowMrOwBiGEiC2HisBeKDzhjS1o'); background-size: cover;"></div>
+<div class="flex flex-col text-xs">
+<span class="font-semibold text-slate-900 dark:text-white">Jane Doe</span>
+<span class="text-text-secondary-light dark:text-text-secondary-dark">Oct 24</span>
+</div>
+</div>
+<button class="rounded-lg bg-primary/10 dark:bg-primary/20 p-2 text-primary hover:bg-primary hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</article>
+<article class="@container">
+<div class="flex flex-col overflow-hidden rounded-xl bg-card-light dark:bg-card-dark shadow-sm dark:shadow-none border border-pink-100 dark:border-slate-800 md:flex-row md:items-stretch h-full transition-all hover:shadow-md hover:shadow-pink-100 dark:hover:shadow-none">
+<div class="h-48 w-full md:h-auto md:w-48 shrink-0 bg-cover bg-center" data-alt="Clean minimalist white desk setup" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDJXlt_AT0ZUBrxJnvPWjbmwb0TXPHgg7zxcXtkWEfdkCeWdknofWcNHNhiue-ELkI4CC2K3no-6RqtzfWqZVTmpF_wjjs1qeoAD0S7cCMf_K5-lWoi_-Py2LfOpvpFWiSg7L0frSGevqcNDGM-OtTvkWhNS87xnrTMP9MdVARZJNKBhbG9Bi0aerpHklfz7UB9L9fBRkywQjVOQpWDjkLyNeNhxZrey7jPG7fGiyaIsqGFrtCvksQdkIYqiGDCZI3nZCbuGje5QrxT');"></div>
+<div class="flex flex-1 flex-col justify-between p-5">
+<div>
+<div class="mb-2 flex items-center gap-2 text-xs font-medium text-primary">
+<span>LIFESTYLE</span>
+<span class="text-slate-300 dark:text-slate-600">•</span>
+<span class="text-text-secondary-light dark:text-text-secondary-dark">3 min read</span>
+</div>
+<h3 class="mb-2 text-lg font-bold text-slate-900 dark:text-white">Minimalism in 2024</h3>
+<p class="mb-4 text-sm text-text-secondary-light dark:text-text-secondary-dark line-clamp-2">
+                                Why less is still more in modern interface design. Trends to watch this coming year as we move away from clutter.
+                            </p>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2 text-xs text-text-secondary-light dark:text-text-secondary-dark">
+<span>John Smith</span>
+<span>•</span>
+<span>Oct 22</span>
+</div>
+<button class="text-xs font-semibold text-primary hover:underline">Read Article</button>
+</div>
+</div>
+</div>
+</article>
+<article class="@container">
+<div class="flex flex-col overflow-hidden rounded-xl bg-card-light dark:bg-card-dark shadow-sm dark:shadow-none border border-pink-100 dark:border-slate-800 md:flex-row md:items-stretch h-full transition-all hover:shadow-md hover:shadow-pink-100 dark:hover:shadow-none">
+<div class="h-48 w-full md:h-auto md:w-48 shrink-0 bg-cover bg-center" data-alt="Sunrise over a calm lake with mist" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDrgzB51hECsoLiCcBAFwh3-xI-6bMOXWjXpS9nbyAIjdf2TTTmbYOJYJhxls4_PQ_x5wmXrWFSD-Piu_Zk26uUTi3cGnkuubYl69mcnpJD0trjx4xFXv8bl2olshHEH8MIkObcIDmk-orCJPDnS-WYBqGI8Bo69bEvg5QSKB_JXVrjGAdyuLDyNi7Yd16a9oFxnOpSwFHxhAOeZFnSUnTMXczoomQj8COtE89c6XWIOOzjVsEe6Sgy9O5xBYlEodTbEXhFeY4m1hfG');"></div>
+<div class="flex flex-1 flex-col justify-between p-5">
+<div>
+<div class="mb-2 flex items-center gap-2 text-xs font-medium text-primary">
+<span>WELLNESS</span>
+<span class="text-slate-300 dark:text-slate-600">•</span>
+<span class="text-text-secondary-light dark:text-text-secondary-dark">6 min read</span>
+</div>
+<h3 class="mb-2 text-lg font-bold text-slate-900 dark:text-white">My Morning Routine</h3>
+<p class="mb-4 text-sm text-text-secondary-light dark:text-text-secondary-dark line-clamp-2">
+                                How I start my day to maximize productivity and maintain mental clarity without burning out before noon.
+                            </p>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2 text-xs text-text-secondary-light dark:text-text-secondary-dark">
+<span>Jane Doe</span>
+<span>•</span>
+<span>Oct 20</span>
+</div>
+<button class="text-xs font-semibold text-primary hover:underline">Read Article</button>
+</div>
+</div>
+</div>
+</article>
+<article class="@container">
+<div class="flex flex-col overflow-hidden rounded-xl bg-card-light dark:bg-card-dark shadow-sm dark:shadow-none border border-pink-100 dark:border-slate-800 p-5 transition-all hover:shadow-md hover:shadow-pink-100 dark:hover:shadow-none">
+<div class="mb-2 flex items-center gap-2 text-xs font-medium text-primary">
+<span>THOUGHTS</span>
+<span class="text-slate-300 dark:text-slate-600">•</span>
+<span class="text-text-secondary-light dark:text-text-secondary-dark">2 min read</span>
+</div>
+<h3 class="mb-2 text-lg font-bold text-slate-900 dark:text-white">Quick thought: The state of CSS</h3>
+<p class="mb-4 text-sm text-text-secondary-light dark:text-text-secondary-dark">
+                        Container queries are finally here and they are changing everything about how we build responsive components. It's no longer just about the viewport width.
+                    </p>
+<div class="flex items-center justify-between mt-2">
+<div class="flex items-center gap-2 text-xs text-text-secondary-light dark:text-text-secondary-dark">
+<span>Alex Dev</span>
+<span>•</span>
+<span>Oct 18</span>
+</div>
+<div class="flex gap-3">
+<span class="material-symbols-outlined text-[18px] text-slate-400 hover:text-primary cursor-pointer">favorite</span>
+<span class="material-symbols-outlined text-[18px] text-slate-400 hover:text-primary cursor-pointer">share</span>
+</div>
+</div>
+</div>
+</article>
+</main>
+<button class="fixed bottom-6 right-6 z-40 flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-r from-pink-500 to-purple-600 shadow-lg shadow-purple-500/30 hover:shadow-purple-500/50 transition-transform hover:scale-105 active:scale-95">
+<span class="material-symbols-outlined text-white text-3xl">add</span>
+</button>
+</div>
+
+</body></html>
